@@ -1,0 +1,123 @@
+#TO CREATE PROJECT IN THE DJANGO USING VSCODE
+'''
+1] OPEN ANY FOLDER  IN VSCODE
+2] CREATE PROJECT [django-admin  startproject projectname]
+3]check the location of the project because while impleminting it should be same location["c:\djngo practise\demoproject\"]
+4] create Apps [py manage.py startapp demoapp1]
+5] Register these apps in installed apps=[
+                                          'demoapp1',
+                                          ]
+6]create urls.py in demoapp1[apps urls(urls.py)]
+7]views.py demoapp1 
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def f1(request):
+    return HttpResponse("Hello, world!")
+8]urls.py in demoapp1
+from django.urls import path
+from demoapp1 import views
+urlspatterns=[
+    path('f1/',views.f1),
+]
+9]project level urls urls.Py in this we need to include [from django.conf.urls import include]
+urlspatterns=[
+    path('admin/', admin.site.urls),
+    path('demoapp1/',include('demoapp1.urls')),
+]
+
+10] TO RUN THE PROJECT [py manage.py runserver]
+11]to change the port number [py manage.py runserver 1501]
+'''
+#Create Superuser in Django
+'''
+ 1] write in terminal [py  manage.py createsuperuser] then password,usernamw ok
+2] then run the server[py manage.py runserver] and [link/admin]
+'''
+# RENDER A HTML TEMPLATE AS RESPONSE
+'''
+1] create a Template folder in the mainproject
+2] in the template create a index html file
+3] open the views.py and write this code
+
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def end(request):
+    return render(request,"index.html")
+def About(request):
+    return HttpResponse("<h3>This is About page</h3>")
+
+4] Templates={
+'DIRS':BASE_DIR,'Template'
+} note::base_dir is common 
+'''
+
+#   django template for loop
+'''
+syntax for loop::{% for n in cilent %}
+<div> {{hello3}}</div>
+ {% end for%}
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

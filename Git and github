@@ -1,0 +1,126 @@
+
+
+# GIT 
+VERSION CONTROL SYSTEM IS A TOOLS THAT HELPS TO TRACK CHANGES IN CODE
+git is a version control system it is 
+popular free and open source and  fast and scalable
+
+we use git for mainly 2reasons
+1]track the history
+2] to collaborate
+
+#GITHUB:: folders[repository]
+website that allows developers to store and manage their code using git
+https:://github.com
+
+github account email id:: abhisandeep15@gmail.com 
+                password::Sandeepgithub@143
+
+#to create a new  repository[[folder] on github
+
+click on the profile --> Top repositories--> new--> repository name
+
+whenever you last to find all respositories ::click on the profile pic right side--> your profile-->  click repositories--> then select the file
+
+Do to changes in github we use ::commit, Do add in github use:: add
+
+#Settings up in git
+
+visual studio code
+windows (git bash)
+ check whether installed or not::git--version write this on git bash
+
+ #Configure git:: two types local and config--global
+ git config--global user.name "abhisandeep15"
+ git config--global user.email "abhisandeep15@gmail.com"
+ git config--list
+~[tilt]:: root dictory[main dictory, folder]
+
+#After this now open vscode and create a folder open it 
+
+clone::cloning a repository on our local machine [remote means files on github][local means on laptop,pc] to copy github things on the laptop we use clone.
+git clone <some link>
+
+status:: displays the state of the code 
+git status
+
+# To copy the github folder on the vs code use below steps
+open github account-->right side click on the profile-->repositories click-->click on the repositories[project folder]--> then click right on code
+--> then Https copy
+then open terminal in vscode -->type git clone <copied link>--> press enter--> then you will find it there
+to go to the current dictory:: "c:/GitDemo/Demo"
+ls::display compelete files list ,ls-a:: display the hidden files tool
+
+#To modify the changes made on the vs code  use this
+open termunal--> git init--> git status-->
+
+there are 4things in it 
+1] untracked :: new files that git doesnt yet track
+2] modified :: changed
+3] staged :: file is ready to be  committed
+4] unmodified :: no changes made
+change(modified -->add-->commit)   newfile-->untracked-->staged-->unchanged
+
+#Things to do it on vs code if we change or modified that is auto done github  steps follow below
+#ADD AND COMMIT
+add:: adds new or changed files in your working directory to the git staging area
+git add<file name>
+to  add all files:: git add .
+
+commit:: it is the record of change
+git commit -m "some message"
+
+PUSH COMMAND:: upload local repo content to remote repo
+git push origin main
+
+git remote add origin https://github.com/abhisandeep15/demo2
+gcloneit  origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
